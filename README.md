@@ -61,7 +61,7 @@ These observations would invite the company to profile existing customers along 
 
 The training dataset (mailout_train) is strongly unbalanced with only 1.2% of positive RESPONSE.  It does not seem that the two predictive models developed are effective in targetting likely customers against such odds.
 
-A summary is available on Medium.
+A summary is available on Medium (https://genevievesegol.medium.com/r-s-v-p-2217af931016)
 
 ## Licensing, Authors, Acknowledgements<a name="licensing"></a>
 The initial data were provided by Arvato Financial Services and are proprietary.  Otherwise, the code is free to use.
