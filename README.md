@@ -64,4 +64,4 @@ The training dataset (mailout_train) is strongly unbalanced with only 1.2% of po
 A summary is available on Medium.
 
 ## Licensing, Authors, Acknowledgements<a name="licensing"></a>
-The initial data were provided by Arvato/Betelsman and are proprietary.  Otherwise, the code is free to use.
+The initial data were provided by Arvato Financial Services and are proprietary.  Otherwise, the code is free to use.
