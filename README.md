@@ -61,7 +61,7 @@ These observations would invite the company to profile existing customers along 
  
 We split mailout_train 20/80 between testing and training. The accuracy for the test results was found to be marginally better for AdaBoost (81.3%) than for RandomForest (78.8%), although the ROC curve shown below implies that both classifiers gave virtually identical results.
 
-![](https://github.com/gsegol/customer_segments/blob/master/ROC.png " roc_curve"
+![alt text](https://github.com/gsegol/customer_segments/blob/master/ROC.png " roc_curve"
 
   * Strategy 2 predictions
  
