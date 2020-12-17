@@ -35,8 +35,8 @@ Therefore, different strategies can be explored in the second notebook without h
     - Interpreting differences between population and customers clusters
   * Developing predictive models for mailout data
     - Tuning up and comparing AdaBoost and RandomForest classifiers
-    - Predicting RESPONSE with an augmented mailout dataset and a binary target (y)
-    - Predicting RESPONSE with a synthetic target based on knowledge derived from the previous cluster analysis 
+    - Predicting RESPONSE with an augmented mailout dataset and a binary target (y) (Strategy 1)
+    - Predicting RESPONSE with a synthetic target based on knowledge derived from the previous cluster analysis (Strategy 2)
 		
 NOTE:  The coding details are specific to these datasets but the process can be replicated to study other situations.
 
@@ -57,10 +57,16 @@ These observations would invite the company to profile existing customers along 
 
    - This observation is confirmed by looking at the next cluster in term of differences. In this cluster we also note the weights given to the features associated with advertising (CJT_TYP_) but we do not have enough information to interpret this further.
 
-  * Predictions
+  * Strategy 1 predictions
+ 
+We split mailout_train 20/80 between testing and training. The accuracy for the test results was found to be marginally better for AdaBoost (81.3%) than for RandomForest (78.8%), although the ROC curve shown below implies that both classifiers gave virtually identical results.
 
-The training dataset (mailout_train) is strongly unbalanced with only 1.2% of positive RESPONSE.  It does not seem that the two predictive models developed are effective in targetting likely customers against such odds.
+  * Strategy 2 predictions
+ 
+ With  the same 80/20 split as in Strategy1, we find RandomForest to be more accurate at predicting the test data. The accuracy with RandomForest was 82.9% vs. 49.4% for AdaBoost.  With a 70/30 split, the accuracy of RandomForest (81.6%) is almost the same as previously. The accuracy of AdaBoost (60.6%) is higher than before, but the gap between the results of the two classifiers is still significant.
 
+We conclude AdaBoost performs marginally better than RandomForest when we use the binary form of the target y (Stragtegy 1). In contrast, RandomForest appears significantly more reliable than AdaBoost when y is not binary (Strategy 2). We base this assessment on the fact that the accuracy of RandomForest is stable when we change the ratio between training and testing subsets, while the accuracy of AdaBoost changes significantly when we vary this ratio.
+  
 A summary is available on Medium (https://genevievesegol.medium.com/r-s-v-p-2217af931016)
 
 ## Licensing, Authors, Acknowledgements<a name="licensing"></a>
