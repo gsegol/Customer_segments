@@ -61,6 +61,8 @@ These observations would invite the company to profile existing customers along 
  
 We split mailout_train 20/80 between testing and training. The accuracy for the test results was found to be marginally better for AdaBoost (81.3%) than for RandomForest (78.8%), although the ROC curve shown below implies that both classifiers gave virtually identical results.
 
+![](https://github.com/gsegol/customer_segments/blob/master/ROC.png " roc_curve"
+
   * Strategy 2 predictions
  
  With  the same 80/20 split as in Strategy1, we find RandomForest to be more accurate at predicting the test data. The accuracy with RandomForest was 82.9% vs. 49.4% for AdaBoost.  With a 70/30 split, the accuracy of RandomForest (81.6%) is almost the same as previously. The accuracy of AdaBoost (60.6%) is higher than before, but the gap between the results of the two classifiers is still significant.
